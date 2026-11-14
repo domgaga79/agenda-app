@@ -71,7 +71,7 @@ As capturas abaixo mostram as principais telas da agenda. Os exemplos de cliente
     <td align="center" width="50%">
       <a href="docs/screenshots/agenda.jpg"><img src="docs/screenshots/agenda.jpg" alt="Agenda diária com atendimento fictício concluído" width="100%"></a><br>
       <strong>Agenda diária</strong><br>
-      Lista diária com horário, cliente, serviço e situação.
+      Atendimento demonstrativo concluído às 9h.
     </td>
   </tr>
   <tr>

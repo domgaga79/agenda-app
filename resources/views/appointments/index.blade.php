@@ -11,7 +11,7 @@
  $step=$mode==='week'?7:1;
  $previous=$mode==='month'?$date->copy()->startOfMonth()->subMonth():$date->copy()->subDays($step);
  $next=$mode==='month'?$date->copy()->startOfMonth()->addMonth():$date->copy()->addDays($step);
- $hourHeight=44;
+ $hourHeight=60;
  $labels=['scheduled'=>'Agendado','confirmed'=>'Confirmado','completed'=>'Concluído','cancelled'=>'Cancelado','no_show'=>'Faltou'];
 @endphp
 <div class="calendar-toolbar"><a class="btn btn-secondary" href="{{ route('appointments.daily',['date'=>$date->toDateString(),'professional_id'=>request('professional')]) }}">Lista diária / imprimir</a><a class="btn btn-secondary" href="{{ route('reminders.index') }}">Lembretes e confirmações</a>

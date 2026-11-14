@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>@yield('title', 'Agenda') · Bacuri Digital</title>
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}?v=21.3">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}?v=21.4">
 <script src="{{ asset('js/mobile-layout.js') }}?v=18" defer></script>
 @include('partials.brand-meta')
 </head>
