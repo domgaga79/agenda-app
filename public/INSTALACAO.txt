@@ -1,0 +1,23 @@
+MANUAL BACURI AGENDA V21 — PADRÃO AZUL E OPEN GRAPH
+
+Envie os arquivos para a raiz pública de agenda.bacuridigital.com, preservando a pasta brand:
+
+manual-bacuri-agenda-v21.html
+brand/og-manual-bacuri-agenda-v21.png
+
+Substitua o HTML atual após guardar uma cópia. A imagem é nova e específica do manual.
+O manual indica /home/bacuridi/agenda-app/public como raiz pública; confira esse caminho na hospedagem.
+
+Endereço do manual:
+https://agenda.bacuridigital.com/manual-bacuri-agenda-v21.html
+
+Endereço da imagem:
+https://agenda.bacuridigital.com/brand/og-manual-bacuri-agenda-v21.png
+
+O HTML já contém as tags Open Graph e Twitter com endereço absoluto, imagem de 1200 x 630 pixels, título e descrição.
+Foi aplicado o azul #365cf5 e o fundo #f4f6fb do CSS atual do sistema, com a marca B, botões, cartões e campos compatíveis.
+Os 21 assuntos e o script original foram preservados. Busca, filtro por perfil, impressão de todos os assuntos e layout de 390 pixels foram verificados no navegador.
+O HTML mantém o CSS incorporado para permitir a leitura do manual sem conexão.
+
+Esta entrega não altera automaticamente o servidor. Depois do envio, teste o link e a imagem em uma janela anônima.
+Aplicativos de compartilhamento podem manter uma prévia antiga em cache.

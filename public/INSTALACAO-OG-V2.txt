@@ -1,0 +1,17 @@
+OG V2 — MANUAL BACURI AGENDA
+
+Envie para a raiz pública de agenda.bacuridigital.com:
+manual-bacuri-agenda-v21.html (substituir o atual)
+brand/og-manual-bacuri-agenda-v21-v2.png (novo arquivo)
+
+Preserve a pasta brand. O HTML já aponta para a nova imagem de 1200 x 1200 e informa as dimensões corretas.
+A imagem foi simplificada para a miniatura quadrada: fundo azul, B e título grande, sem textos pequenos.
+O restante do manual permanece igual à entrega anterior.
+
+Depois do envio, confira a imagem:
+https://agenda.bacuridigital.com/brand/og-manual-bacuri-agenda-v21-v2.png
+
+Para testar uma nova prévia, compartilhe:
+https://agenda.bacuridigital.com/manual-bacuri-agenda-v21.html?og=2
+
+O novo nome da imagem evita reutilizar a imagem antiga pelo mesmo endereço. Mensagens já enviadas podem continuar com a prévia antiga; o WhatsApp controla seu próprio cache.

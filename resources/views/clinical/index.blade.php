@@ -1,0 +1,6 @@
+@extends('layouts.app')
+@section('title','Prontuários')
+@section('heading','Meus pacientes')
+@section('content')
+<section class="card dental-card"><div class="section-head"><h2>Prontuários odontológicos</h2><span class="pill">Acesso clínico</span></div><p class="muted">Pacientes vinculados aos seus agendamentos. A recepção deve associar o cadastro do paciente ao atendimento para liberar a ficha.</p><form method="get" class="dental-inline"><label>Buscar paciente<input name="q" maxlength="100" value="{{ request('q') }}" placeholder="Nome do paciente"></label><button class="btn">Buscar</button></form><div class="clinical-patients">@forelse($patients as $patient)<a class="clinical-patient" href="{{ route('clinical.show',$patient->id) }}"><span class="clinical-avatar">{{ mb_substr($patient->name,0,1) }}</span><div><strong>{{ $patient->name }}</strong><small>{{ $patient->birth_date?->format('d/m/Y') ?: 'Nascimento não informado' }} · {{ $patient->active?'Ativo':'Arquivado' }}</small></div><span aria-hidden="true">→</span></a>@empty<div class="empty">Nenhum paciente vinculado encontrado.</div>@endforelse</div>@include('catalog.pagination',['page'=>$patients])</section>
+@endsection

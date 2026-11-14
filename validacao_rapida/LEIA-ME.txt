@@ -1,0 +1,12 @@
+VALIDAÇÃO FUNCIONAL RÁPIDA - AGENDA BACURI v2
+
+Correção:
+- o schema real da blindagem usa `company_slug_reservations`
+- a versão anterior procurava incorretamente por `company_slugs`
+
+O teste continua não destrutivo e não cria/edita dados de negócio.
+
+Aplicação:
+cd /home/bacuridi/agenda-app
+unzip -o ~/agenda-bacuri-validacao-funcional-rapida-v2.zip
+bash validacao_rapida/validar.sh

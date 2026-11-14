@@ -1,0 +1,102 @@
+{
+  "phpunit.xml": {
+    "new": "bcff0c1e1024264d0677ec5f0864330b9c1c094b85609964b4d1a9b0294ebd32",
+    "original": "cf0d3c702370bb8eb9bbb0a4098c9360576bc94fa3d844eec4e6f6148334b984"
+  },
+  "tests/TestCase.php": {
+    "new": "67f5b3655f1e92b62b23a05a1d444575b0708a427cc40950fa2be1fd50338e6d",
+    "original": "e61d487bdf0dde87c3f34c514373b2b13650418c10e67cdcaceb59ca62274dca"
+  },
+  "routes/web.php": {
+    "new": "2c04491b46d1990268cc9e08ee7494e759835da89c21efbcdf32598b8a6056c2",
+    "original": "24f8b5c2105184b527ba7b5d40e8c6812225ee3789ca918c05bd664ec1aab318"
+  },
+  "app/Models/User.php": {
+    "new": "504256516f95ce4b5b935555abe9d4fc3b44f488e40beee6f2880e256b837521",
+    "original": "dab2f2d4d6cb64c1008505571d4e165838951f960d9f0443b74f7b124b4461aa"
+  },
+  "app/Models/Company.php": {
+    "new": "5394c6b92a058989096049319b7c942dcec7f5b81756b4c291fdfa4680978be5",
+    "original": "474b0b8ef7d2a9e96393e9e5770d48a2b86fcfda23114da52c1cd4a2913b7414"
+  },
+  "app/Models/Customer.php": {
+    "new": "454e50632c02c4ae4e63bf50123076c3d2fe7a9c852c44e5fe07f071aaca3868",
+    "original": null
+  },
+  "app/Models/Appointment.php": {
+    "new": "60b6b91a25b203fe29c81f7c125adfd84ab99ba772607e1cc0a8be00320061c3",
+    "original": "2aa277c56bf7e549b69018b64196206fa38c9b10de13d1e6ae12d0cdd498a15d"
+  },
+  "app/Models/Service.php": {
+    "new": "ea8e7ecd9c3b4c9480acf5202d7b4e212c9aa1e23382ea758bedec435f578d64",
+    "original": null
+  },
+  "app/Console/Commands/CreateCompany.php": {
+    "new": "9825b7fbb92899fbe5564da161a52a4fc08e652ca5ba80c300aa016209c6dc5d",
+    "original": "b91cfc638b2bbba6f39af71f0d78db21d72f5ae1814608fc01f8b31ee24ee60c"
+  },
+  "app/Http/Controllers/TeamController.php": {
+    "new": "b54cdd7aea4b1b03dfc749729ef3fc0501fd8e731cd4fc0d32233fa33d06cc00",
+    "original": "7b8f329401235bb559dcc557adceae4e4b94012be4b851cea327d93e3373c030"
+  },
+  "app/Http/Controllers/CatalogController.php": {
+    "new": "22d959803a80f260bbabc68c63885e8c826f9e9b8dec8fc8eadf94074e4ace9f",
+    "original": null
+  },
+  "app/Http/Controllers/AuthController.php": {
+    "new": "1bd64219df42b3cf01bbc1b21bc57205f5747dbaa794a3e1dc96f4f10517ca44",
+    "original": "674fc36bd0d7a5f7a9d0f9e4b365e342fbaf1bc7c634c610831845b17ed849ec"
+  },
+  "app/Http/Controllers/AppointmentController.php": {
+    "new": "6eae14513916f34552035a06d002877b59545fd8adefbb6fc072289c581cd260",
+    "original": "5322674824dc2a355bf08036461b9f1cc535fc62d515a8cd25485252d0af54ad"
+  },
+  "tests/Feature/CatalogTest.php": {
+    "new": "9c5183a17ee8234b25a07391eba259578cb1434381aa5eca0c2918ccf82b9cfc",
+    "original": null
+  },
+  "database/migrations/2026_09_26_000200_link_appointment_catalogs.php": {
+    "new": "4b91771c8f619c2ae90b8e1ddb7b38bf7857dd28a13e06944e3df4507ed196c3",
+    "original": null
+  },
+  "database/migrations/2026_09_26_000100_create_customers_and_services.php": {
+    "new": "4818819d2ee161a022ef5f588d94787b1ae5a02f9509cbfbeed4efca55313b5b",
+    "original": null
+  },
+  "public/css/app.css": {
+    "new": "c5de5545bbfdbbc18028bdd94f8abeefa29e02f3cf19831056b76ba32c7a426f",
+    "original": "f53a82a4922136cf92ec5270033d6feb58018adb89464e2ac6c2f1f67c66fd53"
+  },
+  "public/js/appointment-catalogs.js": {
+    "new": "5d815f726fc3bcc795c04766af43d2a19ffe32816a4690bc35735de009b644e5",
+    "original": null
+  },
+  "resources/views/layouts/app.blade.php": {
+    "new": "b1536bce2505b0ac440e0d83cccb00077e8392a8617aa1d5df5621b0574175a9",
+    "original": "34c4854a1339b5b97851203bc8156695d3f2e51de45070bab25390a72243bc83"
+  },
+  "resources/views/auth/change-password.blade.php": {
+    "new": "541d7fcfb7a72a28be4ba6a0085bdb5bdd911813cdd2ebb03907cf3713b3b76b",
+    "original": "7795ad814b5d27689e47591cca147e51f6d7930981a3f5504efbd3a3866f2739"
+  },
+  "resources/views/catalog/index.blade.php": {
+    "new": "e9304f541af53feec52671cc51c03ad5fdea5868eb06026e4065030232de94d0",
+    "original": null
+  },
+  "resources/views/catalog/pagination.blade.php": {
+    "new": "c8fa05e32f47258e1d9e9e3193573887fabfc89b7f81f2d5148b1fc48558424c",
+    "original": null
+  },
+  "resources/views/catalog/history.blade.php": {
+    "new": "daa9f96bd38cf21e79723c40053e2c9718aac32d388bbdbab107387d708bb151",
+    "original": null
+  },
+  "resources/views/catalog/form.blade.php": {
+    "new": "f76785e784bbfb4cddfc9b0c2b97b59ec97aea3d53b444a06c56b14fac27cdde",
+    "original": null
+  },
+  "resources/views/appointments/partials/form.blade.php": {
+    "new": "db6fc611bbfd403e43231dca66908fbc1a6091bb9b1b85060b46755805f29010",
+    "original": "c988077c7d6cd269f0d5e6da7ba4bc0ad8a0a5ad0ed12e418b0692a45dd064d4"
+  }
+}

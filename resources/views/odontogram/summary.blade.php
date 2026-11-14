@@ -1,0 +1,4 @@
+@php($counts=\App\Support\Odontogram::counts($chart['teeth']))
+<p class="muted">{{ $counts['assessed'] }} dente(s) com avaliação registrada · {{ $counts['notes'] }} com observações · ambas as dentições consideradas.</p>
+<div class="odonto-records">@foreach($chart['teeth'] as $code=>$tooth)@if($tooth['status']!=='unassessed' || !empty($tooth['notes']))<div class="odonto-record"><strong>Dente {{ $code }}</strong><span>{{ \App\Support\Odontogram::STATES[$tooth['status']] }}</span>@if(!empty($tooth['notes']))<p class="clinical-text">{{ $tooth['notes'] }}</p>@endif</div>@endif @endforeach</div>
+@if(!empty($chart['notes']))<h3>Observações gerais</h3><p class="clinical-text">{{ $chart['notes'] }}</p>@endif

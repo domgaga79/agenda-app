@@ -1,0 +1,1 @@
+<div class="odonto-legend" aria-label="Legenda das condições">@foreach(\App\Support\Odontogram::STATES as $value=>$label)<span class="state-{{ $value }}"><b aria-hidden="true">{{ ['unassessed'=>'?','sound'=>'✓','caries'=>'●','restored'=>'■','missing'=>'×','unerupted'=>'…','implant'=>'⊙','other'=>'!'][$value] }}</b>{{ $label }}</span>@endforeach</div>

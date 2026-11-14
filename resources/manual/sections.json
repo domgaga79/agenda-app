@@ -1,0 +1,225 @@
+[
+  {
+    "id": "inicio",
+    "title": "Comece por aqui",
+    "roles": "owner reception professional",
+    "paragraphs": [
+      "O Bacuri Agenda reúne a rotina administrativa e odontológica da clínica. Este manual descreve os recursos disponíveis na versão 21. No celular, use o botão Menu para acessar as telas. Clique na marca para voltar ao início.",
+      "Primeira configuração: confira Empresa, cadastre a Equipe, registre Serviços e Clientes e pacientes, configure a Disponibilidade e faça um agendamento de conferência antes de divulgar o link público.",
+      "Rotina diária: confira o Painel, revise a Agenda, entre em contato com os pacientes em Lembretes, atualize as situações dos atendimentos e registre os recebimentos. O dentista registra o atendimento no prontuário com seu próprio acesso."
+    ]
+  },
+  {
+    "id": "acessos",
+    "title": "Acessos, equipe e senha",
+    "roles": "owner reception professional",
+    "paragraphs": [
+      "O proprietário gerencia empresa, equipe, configurações de agendamento público e auditoria. A recepção opera os cadastros, agenda, disponibilidade, lembretes, espera e retornos e financeiro. O profissional acessa sua agenda e seus relatórios; os recursos clínicos exigem habilitação adicional.",
+      "Em Equipe, o proprietário cria acessos individuais de recepção ou profissional. Para o dentista, habilite o acesso clínico e informe o registro profissional. Um proprietário que também atende deve usar um acesso individual de profissional para registrar os atendimentos.",
+      "No primeiro acesso, troque a senha quando solicitado. Para trocar depois, use Alterar senha. Se um integrante esquecer a senha, o proprietário pode redefini-la na edição da equipe. Não compartilhe contas entre pessoas. Desative o acesso de quem deixou a clínica."
+    ]
+  },
+  {
+    "id": "cadastros",
+    "title": "Clientes, pacientes e serviços",
+    "roles": "owner reception",
+    "paragraphs": [
+      "Em Clientes e pacientes, pesquise antes de cadastrar para evitar duplicidade. Confira nome e contato; preencha os demais dados e responsável quando aplicável. Arquivar um paciente mantém seu histórico, mas impede novos registros clínicos.",
+      "Em Serviços, cadastre o nome, duração e valor do procedimento. Confira a duração, pois ela interfere nos horários oferecidos para agendamento.",
+      "No agendamento, selecione o paciente cadastrado. Digitar somente o nome e telefone não substitui o vínculo com seu cadastro e pode impedir que ele apareça no prontuário."
+    ]
+  },
+  {
+    "id": "disponibilidade",
+    "title": "Expediente, procedimentos e bloqueios",
+    "roles": "owner reception",
+    "paragraphs": [
+      "Em Disponibilidade, selecione o profissional e cadastre seus períodos de atendimento por dia da semana. Associe os procedimentos que ele realiza. Para a marcação pública, profissional e serviço precisam estar ativos e atender aos critérios de disponibilidade.",
+      "Cadastre bloqueios para ausências e intervalos. Se houver atendimento em conflito, resolva o agendamento antes de criar o bloqueio. Remover um período de expediente não cancela os atendimentos já registrados.",
+      "O proprietário define o fuso horário da clínica, antecedência mínima, janela de dias para reserva e ativação do agendamento público. Confira o fuso antes de divulgar horários."
+    ]
+  },
+  {
+    "id": "publico",
+    "title": "Agendamento público",
+    "roles": "owner reception",
+    "paragraphs": [
+      "O link usa o formato /agendar/identificador-da-clinica. Confira o identificador em Empresa; sua alteração muda o endereço que será divulgado. Ative a marcação pública em Disponibilidade.",
+      "O paciente escolhe serviço, profissional, data e horário e preenche seus dados de contato. O sistema verifica novamente a vaga ao salvar; se outra pessoa ocupar o horário, será necessário escolher outra opção.",
+      "A reserva pública entra como agendada. A recepção deve conferir o contato e vincular a reserva ao paciente cadastrado: localize ou crie o paciente e edite o agendamento selecionando esse cadastro. Essa etapa permite o acesso clínico pelo dentista vinculado.",
+      "Se não aparecerem horários, confira ativação da marcação pública, profissional e serviço ativos, associação do procedimento, expediente, bloqueios, antecedência e janela de reserva."
+    ]
+  },
+  {
+    "id": "agenda",
+    "title": "Calendário e situações do atendimento",
+    "roles": "owner reception professional",
+    "paragraphs": [
+      "Use as visualizações Dia, Semana e Mês e navegue pelas datas. No celular, abra o Menu para trocar de módulo. Os filtros ajudam a localizar o profissional e o período desejados.",
+      "Ao criar ou editar um agendamento, confira paciente, profissional, serviço, início e término. Resolva mensagens de conflito antes de salvar; a disponibilidade é validada pelo sistema.",
+      "Agendado representa a reserva inicial; Confirmado indica confirmação; Concluído registra atendimento realizado; Cancelado libera o horário; Faltou registra a ausência. Atualize a situação conforme o que ocorreu.",
+      "Prefira cancelar um atendimento quando precisar manter seu histórico. Ao mudar horário ou contato, revise os lembretes: links anteriores podem ser desativados e a confirmação precisa ser renovada."
+    ]
+  },
+  {
+    "id": "lembretes",
+    "title": "Lembretes e confirmação pelo WhatsApp",
+    "roles": "owner reception professional",
+    "paragraphs": [
+      "Abra Lembretes ou a opção de WhatsApp e confirmação do agendamento. Confira o telefone e gere o link e a mensagem. Use Abrir WhatsApp, revise o destinatário e envie a mensagem no aplicativo.",
+      "O envio é manual. Abrir o WhatsApp não comprova que a mensagem foi enviada. Depois de enviar, use Marcar como enviado para registrar o contato no sistema.",
+      "O paciente pode confirmar ou cancelar pelo link até sua expiração no horário de início do atendimento. Se o telefone estiver errado ou precisar substituir a mensagem, desative o link ou gere outro; o anterior deixa de valer.",
+      "Se não aparecer a opção de preparar mensagem, confira se você abriu o atendimento correto e se a situação e o horário ainda permitem a operação. Um registro de envio não significa que o paciente confirmou."
+    ]
+  },
+  {
+    "id": "retornos",
+    "title": "Lista de espera e retornos",
+    "roles": "owner reception",
+    "paragraphs": [
+      "Em Espera e retornos, crie uma solicitação para um paciente cadastrado. Escolha espera ou retorno, período desejado e, quando necessário, preferências de profissional e serviço.",
+      "Confira as pendências no Painel ou na lista, entre em contato e registre o contato manualmente. O botão de WhatsApp prepara o contato, mas não envia automaticamente.",
+      "Use a ação de agendar a partir da solicitação para manter o vínculo. O horário precisa respeitar suas condições. Se o atendimento vinculado for cancelado, excluído ou passar para outro paciente, a solicitação volta a ficar pendente. Encerre solicitações que não devem mais ser trabalhadas."
+    ]
+  },
+  {
+    "id": "prontuario",
+    "title": "Prontuário, anamnese e evolução",
+    "roles": "professional owner",
+    "paragraphs": [
+      "O prontuário aparece para profissionais ativos com acesso clínico habilitado e registro profissional informado. O paciente precisa estar vinculado a um agendamento não cancelado desse dentista na mesma clínica.",
+      "No prontuário, confira o paciente, registre a anamnese e acrescente evoluções do atendimento. Revise antes de salvar. Registros clínicos salvos preservam seu conteúdo; correções são feitas por novas versões ou adendos, conforme a opção da tela.",
+      "Proprietário e recepção não têm acesso ao conteúdo clínico por seus perfis administrativos. A auditoria do proprietário mostra eventos de acesso e registro, sem exibir o texto do prontuário.",
+      "Se o paciente não aparecer, confira o perfil do usuário, habilitação clínica, vínculo do paciente no agendamento, dentista selecionado e situação do atendimento. Pacientes arquivados permitem consulta do histórico, mas não novos registros."
+    ]
+  },
+  {
+    "id": "odontograma",
+    "title": "Odontograma",
+    "roles": "professional",
+    "paragraphs": [
+      "Abra Odontograma dentro do prontuário. Escolha a dentição permanente, decídua ou mista e registre a condição geral dos dentes usando a numeração FDI apresentada.",
+      "Confira as alterações e salve uma nova versão. Consulte as versões anteriores quando precisar acompanhar a evolução. A condição inicial é não avaliado.",
+      "Esta versão registra uma condição geral por dente; não oferece marcação por faces nem periodontograma. O odontograma não substitui a descrição do atendimento na evolução."
+    ]
+  },
+  {
+    "id": "plano",
+    "title": "Plano de tratamento e orçamento",
+    "roles": "professional owner reception",
+    "paragraphs": [
+      "No prontuário, o dentista abre o plano de tratamento e adiciona procedimentos do catálogo ou descrições próprias. Informe dente ou região quando necessário, quantidade, valor e situação de cada item.",
+      "Valor em branco significa a combinar; zero representa R$ 0,00. Itens cancelados não entram no total. O progresso considera os itens, não a quantidade de sessões. Para concluir o plano, finalize os itens não cancelados.",
+      "Salvar mantém o histórico de versões. Para encaminhar os valores à administração, use a ação de gerar orçamento. Isso cria um rascunho financeiro; não registra aprovação do paciente nem recebimento automaticamente.",
+      "A recepção ou o proprietário revisa o orçamento no Financeiro e registra a aprovação e condições de pagamento. Mudanças no plano clínico não devem ser presumidas como atualização automática de um orçamento já criado."
+    ]
+  },
+  {
+    "id": "anexos",
+    "title": "Anexos e exames",
+    "roles": "professional",
+    "paragraphs": [
+      "Dentro do prontuário, abra Anexos e exames. Informe um título, escolha o arquivo e acrescente uma descrição se necessário. São aceitos PDF, JPG e PNG, um arquivo por envio, com limite de 2 MB.",
+      "Para consultar, use o download. O acesso exige as mesmas permissões clínicas e vínculo com o paciente. Os arquivos ficam em armazenamento privado e criptografado.",
+      "Se você anexou algo incorreto, use a opção de desconsiderar e informe o motivo. O arquivo permanece no histórico; não há exclusão física por essa ação. Pacientes arquivados não recebem novos anexos.",
+      "Se aparecer arquivo indisponível, comunique ao administrador. Não substitua arquivos criptografados diretamente no servidor."
+    ]
+  },
+  {
+    "id": "financeiro",
+    "title": "Orçamentos, parcelas e recebimentos",
+    "roles": "owner reception",
+    "paragraphs": [
+      "No Financeiro, crie ou abra um orçamento e confira paciente, procedimentos, quantidades e valores. Ajuste descontos e condições antes de aprovar. Registre quem aprovou, a data e o canal de aprovação conforme solicitado.",
+      "Defina entrada e parcelas quando aplicável. Ao receber, registre o valor efetivamente pago, data e forma de pagamento. O sistema permite pagamentos parciais e acompanha o saldo.",
+      "Registrar um pagamento não movimenta dinheiro nem confirma automaticamente uma transferência bancária. Confira o recebimento antes de dar baixa. O comprovante disponível para impressão não é nota fiscal.",
+      "Para corrigir um pagamento registrado incorretamente, o proprietário realiza o estorno e informa o motivo; depois registre o pagamento correto. Cancelamentos e alterações podem ser impedidos enquanto existirem pagamentos válidos."
+    ]
+  },
+  {
+    "id": "despesas",
+    "title": "Despesas e pagamentos",
+    "roles": "owner reception",
+    "paragraphs": [
+      "Abra Despesas pelo Financeiro. Registre descrição, fornecedor quando aplicável, categoria, valor e vencimento. Confira os dados antes de registrar pagamentos.",
+      "Registre os pagamentos parciais ou totais com a data e forma utilizadas. A baixa é manual e não executa pagamentos bancários. Despesas com pagamentos válidos têm restrições de edição e cancelamento.",
+      "O proprietário pode estornar um pagamento incorreto com justificativa. Depois do estorno, confira o saldo antes de registrar outra baixa."
+    ]
+  },
+  {
+    "id": "relatorios",
+    "title": "Painel e relatórios",
+    "roles": "owner reception professional",
+    "paragraphs": [
+      "O Painel reúne atendimentos do dia e próximos agendamentos. Para a administração, também apresenta pendências de espera e retornos e valores vencidos ou com vencimento no dia, conforme os registros existentes.",
+      "Em Relatórios da agenda, selecione período e profissional quando disponível. O profissional consulta somente seus atendimentos. Exporte CSV para analisar os totais por dia, profissional e situação.",
+      "A taxa de faltas considera faltas divididas pela soma de concluídos e faltas. Quando não existem atendimentos nessas situações, não há taxa a calcular. Alterar a situação de um atendimento muda o relatório correspondente.",
+      "O relatório financeiro usa a data dos recebimentos e pagamentos válidos. A diferença entre entradas e saídas registradas não representa necessariamente lucro ou saldo bancário. Um estorno retira o pagamento original dos totais; não é um novo movimento de caixa na data do estorno."
+    ]
+  },
+  {
+    "id": "rotina",
+    "title": "Roteiro diário da clínica",
+    "roles": "owner reception professional",
+    "paragraphs": [
+      "Na abertura: confira o Painel, os horários da Agenda, os pacientes sem confirmação e as pendências de retorno. Corrija contatos e vínculos de cadastro antes do atendimento.",
+      "Na recepção: revise o cadastro, acompanhe a situação do agendamento e registre os recebimentos efetivos. O dentista registra anamnese, evolução, odontograma, plano e anexos pertinentes usando seu acesso.",
+      "No fechamento: atualize atendimentos concluídos, faltas e cancelamentos; confira recebimentos, despesas e pendências. Combine a próxima consulta ou registre um retorno para acompanhamento."
+    ]
+  },
+  {
+    "id": "suporte",
+    "title": "Dúvidas e suporte",
+    "roles": "owner reception professional",
+    "paragraphs": [
+      "Menu diferente de outro usuário: confira o perfil e as permissões da equipe. O filtro deste manual apenas organiza as orientações; não concede acesso aos módulos.",
+      "Horário público ausente: confira os critérios em Disponibilidade. Paciente fora do prontuário: confira seu vínculo cadastral no agendamento e o dentista responsável. Falha no anexo: confira formato e limite de 2 MB.",
+      "Ao solicitar suporte, envie a tela, a ação realizada, o horário e a mensagem de erro. Oculte dados de pacientes e credenciais em capturas. Não envie a senha, APP_KEY ou o conteúdo do arquivo de configuração.",
+      "Para usar este manual sem conexão, baixe o HTML e abra no navegador. Para gerar PDF, use Imprimir / Salvar PDF e selecione o destino de impressão do navegador. A impressão inclui todos os assuntos."
+    ]
+  },
+  {
+    "id": "infra",
+    "title": "Infraestrutura e backup do administrador",
+    "roles": "owner",
+    "paragraphs": [
+      "A instalação usa PHP 8.4.1 ou superior, Laravel e MariaDB/MySQL na hospedagem compartilhada Softhost. O projeto fica em /home/bacuridi/agenda-app e a raiz pública em /home/bacuridi/agenda-app/public. As funções atuais não exigem um processo Node permanente.",
+      "O atualizador salva uma cópia dos arquivos de código afetados. Essa cópia não é um backup completo do banco nem dos anexos. Não há confirmação de rotina automática de backup externo nesta instalação.",
+      "O responsável técnico deve guardar cópias protegidas do banco, dos arquivos privados em storage/app/clinical-private e da configuração .env, incluindo a APP_KEY original. A perda da chave impede recuperar conteúdo criptografado. Teste a restauração em ambiente separado.",
+      "Mantenha o diretório público apontando somente para public. Antes de atualizar, preserve os backups e use o pacote indicado para a versão instalada. Não recrie a empresa nem substitua a configuração existente."
+    ]
+  },
+  {
+    "id": "impressao",
+    "title": "Imprimir prontuário e salvar PDF",
+    "roles": "professional",
+    "paragraphs": [
+      "Abra o prontuário do paciente e clique em Imprimir prontuário. A consulta exige o mesmo acesso clínico e vínculo com o paciente; proprietário e recepção não acessam o documento por seus perfis administrativos.",
+      "Use os filtros de data para selecionar atendimentos. Sem filtros, a consulta considera todo o período. Os registros aparecem pela data do atendimento e incluem as versões de anamnese, evoluções, adendos, planos e o conteúdo textual dos odontogramas. Dentes não avaliados e sem observações não entram na relação textual.",
+      "Cada lote contém até 25 registros. O cabeçalho informa o lote e a quantidade total. Para obter o histórico inteiro, imprima todos os lotes. Referências a registros de outros lotes ou períodos mantêm seus números originais. Os arquivos de exames devem ser consultados separadamente em Anexos e exames.",
+      "Use Imprimir este lote / Salvar PDF e escolha impressora ou PDF no navegador. A auditoria registra a consulta à tela, não a conclusão da impressão. O documento não tem assinatura digital certificada. Guarde a cópia em local protegido."
+    ]
+  },
+  {
+    "id": "receber",
+    "title": "Contas a receber",
+    "roles": "owner reception",
+    "paragraphs": [
+      "Em Financeiro, abra Contas a receber. A tela reúne parcelas com saldo de orçamentos aprovados, de todos os vencimentos quando as datas estão vazias. Orçamentos em rascunho, cancelados e parcelas quitadas não aparecem.",
+      "Pesquise pelo nome registrado no orçamento e filtre por vencimento, situação ou somente pagamentos parciais. Vencida significa vencimento anterior ao dia atual no fuso da clínica. Vence hoje e A vencer são exibidos separadamente.",
+      "Os cartões somam todos os resultados dos filtros, mesmo quando a lista possui várias páginas. O saldo desconta apenas pagamentos válidos; um estorno reabre o valor correspondente. Não há cálculo automático de juros ou multas.",
+      "Use Consultar / receber para abrir a parcela no orçamento. Confira o recebimento efetivo e registre o pagamento na tela existente. A consulta não envia cobranças nem realiza transações bancárias. Pacientes arquivados podem continuar com valores pendentes."
+    ]
+  },
+  {
+    "id": "lista-diaria",
+    "title": "Lista diária e impressão da agenda",
+    "roles": "owner reception professional",
+    "paragraphs": [
+      "Na Agenda, use Lista diária / imprimir. A data e o profissional selecionados no calendário são levados à lista. Você pode ajustar os filtros na própria tela. Proprietário e recepção consultam a clínica; o profissional consulta somente seus atendimentos.",
+      "A lista considera atendimentos com início na data escolhida, no fuso da clínica. Por padrão, exclui cancelados. Selecione outra situação ou Todos, incluindo cancelados para mudar a consulta. Nomes, serviço, horários, profissional e situação aparecem na impressão; contatos e observações não são incluídos.",
+      "Use Imprimir este lote / Salvar PDF e escolha o destino no navegador. Cada lote contém até 50 atendimentos. O cabeçalho informa o lote e a quantidade total. Imprima todos os lotes para obter a lista completa dos filtros.",
+      "Clique no nome do paciente para editar o agendamento no sistema. Alterações feitas no papel não atualizam os registros. A lista mostra a situação no momento da consulta; recarregue para acompanhar mudanças e guarde as cópias em local protegido."
+    ]
+  }
+]

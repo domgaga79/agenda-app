@@ -1,0 +1,12 @@
+.print-filters select{width:100%;min-width:0;padding:10px;border:1px solid #ccd6ef;border-radius:6px;background:white;font:inherit}.daily-table{width:100%;border-collapse:collapse;table-layout:fixed}.daily-table th,.daily-table td{text-align:left;padding:12px 8px;border-bottom:1px solid #e4e9f2;vertical-align:top;overflow-wrap:anywhere}.daily-table th{background:#eef2ff;font-size:13px}.daily-table small{display:block;color:#69758d}.daily-table a{color:#365cf5;text-decoration:none}.daily-table th:first-child{width:16%}@media screen and (max-width:650px){.daily-table,.daily-table tbody,.daily-table tr,.daily-table td{display:block;width:100%}.daily-table thead{display:none}.daily-table tr{border:1px solid #d7e0f4;border-radius:8px;padding:8px;margin:12px 0}.daily-table td{display:grid;grid-template-columns:90px minmax(0,1fr);gap:6px;border:0;padding:6px}.daily-table td:before{content:attr(data-label);font-weight:600;font-size:13px;white-space:nowrap}.daily-table small{grid-column:2}}@media print{.daily-table{font-size:9pt}.daily-table thead{display:table-header-group}.daily-table tr{break-inside:avoid}.daily-table a{color:black}.daily-table th,.daily-table td{padding:7px 5px}}
+
+/* Match the main application palette. */
+.print-toolbar a,.print-filters a,.print-navigation a,.eyebrow{color:#365cf5}
+.print-toolbar button,.print-filters button{background:#365cf5}
+.print-toolbar button:hover,.print-filters button:hover{background:#2847cc}
+.print-filters input{border-color:#ccd6ef;color:#1a2440}
+.document-header,.document-footer{border-color:#365cf5}
+.document-scope{border-color:#365cf5}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #6683ff;outline-offset:3px}
+@media screen{body{background:#f4f6fb;color:#1a2440}.document-scope{background:#eef2ff}.print-document{box-shadow:0 8px 28px rgba(31,47,93,.045)}}
+@media print{.eyebrow{color:#1a2440}}

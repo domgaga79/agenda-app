@@ -1,0 +1,12 @@
+@php
+ $item=$item??[];
+ $itemId=$item['id']??(string)\Illuminate\Support\Str::uuid();
+@endphp
+<article class="treatment-item" data-treatment-item>
+<input type="hidden" name="clinical[items][{{ $index }}][id]" value="{{ $itemId }}" data-item-id>
+<div class="section-head"><h3>Procedimento <span data-item-number>{{ is_numeric($index)?$index+1:'' }}</span></h3><button type="button" class="btn secondary treatment-remove" data-remove-item hidden>Retirar desta versão</button></div>
+<div class="dental-grid"><label>Selecionar do catálogo<select name="clinical[items][{{ $index }}][service_id]" data-service><option value="">Procedimento descrito manualmente</option>@foreach($services as $service)<option value="{{ $service->id }}" data-description="{{ $service->name }}" data-price="{{ $service->price_cents===null?'':number_format($service->price_cents/100,2,',','') }}" @selected(($item['service_id']??null)===$service->id) @disabled(!$service->active && ($item['service_id']??null)!==$service->id)>{{ $service->name }}{{ $service->active?'':' (arquivado)' }}</option>@endforeach</select></label><label>Dente ou região (opcional)<input name="clinical[items][{{ $index }}][region]" maxlength="40" value="{{ $item['region']??'' }}" placeholder="Ex.: 36 ou região anterior"></label></div>
+<label>Descrição do procedimento<input name="clinical[items][{{ $index }}][description]" required maxlength="150" value="{{ $item['description']??'' }}" data-description></label>
+<div class="treatment-item-values"><label>Quantidade<input type="number" name="clinical[items][{{ $index }}][quantity]" min="1" max="100" required value="{{ $item['quantity']??1 }}" data-quantity></label><label>Valor unitário (R$)<input name="clinical[items][{{ $index }}][unit_price]" inputmode="decimal" maxlength="9" pattern="[0-9]{1,6}([.,][0-9]{1,2})?" value="{{ isset($item['unit_price_cents'])?number_format($item['unit_price_cents']/100,2,',',''):'' }}" placeholder="A combinar" data-price></label><label>Situação<select name="clinical[items][{{ $index }}][status]" data-status>@foreach(\App\Support\TreatmentPlan::ITEM_STATES as $value=>$label)<option value="{{ $value }}" @selected(($item['status']??'planned')===$value)>{{ $label }}</option>@endforeach</select></label></div>
+<label>Observações deste item<textarea name="clinical[items][{{ $index }}][notes]" maxlength="1000" rows="2">{{ $item['notes']??'' }}</textarea></label>
+</article>

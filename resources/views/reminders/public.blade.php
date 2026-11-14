@@ -1,0 +1,13 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow,nosnippet"><meta name="referrer" content="no-referrer"><title>Confirmação de agendamento · Agenda</title><link rel="stylesheet" href="{{ asset('css/app.css') }}?v=12">@include('partials.brand-meta')</head><body class="confirmation-body"><main class="confirmation-card"><img src="{{ asset('brand/symbol.svg') }}" alt="Agenda · Bacuri Digital" width="56" height="56">
+@if(!$appointment)<h1>Este link não está disponível</h1><p>O horário pode ter sido alterado, o link desativado ou sua validade encerrada. Fale com a clínica para conferir seu agendamento.</p>
+@else<h1>{{ $appointment->company->name }}</h1><p>Seu agendamento</p><div class="confirmation-time"><strong>{{ $appointment->starts_at->format('d/m/Y') }}</strong><strong>{{ $appointment->starts_at->format('H:i') }}</strong><small>Horário local da clínica · {{ $appointment->company->booking_timezone }}</small></div>
+@if(session('success'))<div class="alert success">{{ session('success') }}</div>@endif
+@if($errors->any())<div class="alert danger">Confira a opção escolhida e marque a confirmação antes de continuar.</div>@endif
+@if($appointment->status==='cancelled')<h2>Agendamento cancelado</h2><p>Este horário foi liberado. Para remarcar, fale com a clínica.</p>
+@else
+@if($link->response==='confirmed')<div class="alert success">Sua presença está confirmada.</div>@else<p>Confirme sua presença ou avise se não puder comparecer.</p><form method="post" action="{{ route('confirmation.respond',$link->token) }}" class="confirmation-form">@csrf<input type="hidden" name="choice" value="confirmed"><label><input type="checkbox" name="acknowledge" value="1" required> Sou o paciente ou responsável e confirmo este horário.</label><button class="btn btn-primary">Confirmar presença</button></form>@endif
+<details class="confirmation-cancel"><summary>Não poderei comparecer</summary><p>O cancelamento libera este horário e não pode ser desfeito por este link.</p><form method="post" action="{{ route('confirmation.respond',$link->token) }}" class="confirmation-form">@csrf<input type="hidden" name="choice" value="cancelled"><label><input type="checkbox" name="acknowledge" value="1" required> Sou o paciente ou responsável e quero cancelar este agendamento.</label><button class="btn btn-secondary">Cancelar agendamento</button></form></details>
+@endif
+@if($appointment->company->phone)<p class="confirmation-contact">Contato da clínica: {{ $appointment->company->phone }}</p>@endif
+@endif
+<footer>Agenda · Bacuri Digital<br>Não compartilhe seu link com outras pessoas.</footer></main></body></html>

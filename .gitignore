@@ -1,0 +1,45 @@
+﻿/vendor/
+/node_modules/
+/.env
+/.env.*
+!/.env.example
+/.phpunit.result.cache
+/error_log
+/_backup_multitenant_*/
+/public/build/
+/public/hot
+/storage/logs/*
+/storage/framework/cache/data/*
+/storage/framework/sessions/*
+/storage/framework/testing/*
+/storage/framework/views/*
+/bootstrap/cache/*.php
+/auth.json
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Backups e arquivos temporarios
+*.bak
+*.old
+*.orig
+/_backup_*/
+
+# Dados privados e uploads
+/storage/app/**
+!/storage/app/.gitignore
+
+
+# Bancos de dados locais
+/database/*.sqlite
+/database/*.sqlite3
+/database/*.db
+/database/*.sql
+*.dump
+*.pem
+*.key
+
+
+# Logs em qualquer pasta
+**/error_log
+

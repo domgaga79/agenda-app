@@ -1,0 +1,23 @@
+<?php
+return [
+ 'required'=>'O campo :attribute é obrigatório.',
+ 'email'=>'Informe um e-mail válido em :attribute.',
+ 'unique'=>'Este :attribute já está cadastrado.',
+ 'confirmed'=>'A confirmação de :attribute não confere.',
+ 'current_password'=>'A senha atual está incorreta.',
+ 'different'=>'O campo :attribute deve ser diferente de :other.',
+ 'string'=>'O campo :attribute deve conter texto.',
+ 'boolean'=>'Selecione uma situação válida.',
+ 'in'=>'Selecione uma opção válida em :attribute.',
+ 'timezone'=>'Selecione um fuso horário válido.',
+ 'min'=>['string'=>'O campo :attribute deve ter pelo menos :min caracteres.'],
+ 'max'=>['string'=>'O campo :attribute deve ter no máximo :max caracteres.'],
+ 'password'=>['letters'=>'A senha deve conter pelo menos uma letra.','numbers'=>'A senha deve conter pelo menos um número.'],
+ 'date'=>'Informe uma data válida em :attribute.',
+ 'date_format'=>'O campo :attribute deve seguir o formato :format.',
+ 'after'=>'O campo :attribute deve ser posterior a :date.',
+ 'regex'=>'O formato de :attribute é inválido.',
+ 'integer'=>'O campo :attribute deve ser um número inteiro.',
+ 'alpha_dash'=>'Use letras, números, traços ou sublinhados no identificador.',
+ 'attributes'=>['client_name'=>'cliente / paciente','professional_id'=>'profissional','service'=>'serviço / procedimento','starts_at'=>'início','ends_at'=>'fim','notes'=>'observações','status'=>'situação','slug'=>'identificador','name'=>'nome','company_name'=>'nome da empresa','email'=>'e-mail','password'=>'senha','current_password'=>'senha atual','segment'=>'segmento','phone'=>'telefone','role'=>'perfil','timezone'=>'fuso horário','is_active'=>'situação'],
+];

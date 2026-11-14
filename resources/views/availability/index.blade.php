@@ -1,0 +1,31 @@
+@extends('layouts.app')
+@section('title','Disponibilidade')
+@section('heading','Disponibilidade e página da clínica')
+@section('content')
+@php($weekdays=['Domingo','Segunda-feira','Terça-feira','Quarta-feira','Quinta-feira','Sexta-feira','Sábado'])
+<div class="dental-stack">
+<section class="card dental-card"><h2>Agendamento público</h2><p>Configure os procedimentos e o expediente dos dentistas antes de ativar o link.</p>
+<div class="booking-link">{{ route('booking.index',$company->slug) }}</div>
+@if($company->booking_enabled)<a class="btn" href="{{ route('booking.index',$company->slug) }}" target="_blank" rel="noopener">Abrir página da clínica</a>@else<p class="muted">O link está desativado.</p>@endif
+@if(auth()->user()->isOwner())
+<form method="post" action="{{ route('availability.settings') }}" class="dental-form">@csrf @method('PUT')
+<div class="dental-grid"><label>Reservas públicas<select name="booking_enabled"><option value="0">Desativadas</option><option value="1" @selected(old('booking_enabled',$company->booking_enabled))>Ativadas</option></select></label>
+<label>Fuso da clínica<select name="booking_timezone">@foreach(['America/Bahia','America/Sao_Paulo','America/Manaus','America/Cuiaba','America/Rio_Branco','America/Noronha'] as $tz)<option @selected(old('booking_timezone',$company->booking_timezone)===$tz)>{{ $tz }}</option>@endforeach</select></label>
+<label>Antecedência mínima (horas)<input type="number" name="booking_notice_hours" min="1" max="168" required value="{{ old('booking_notice_hours',$company->booking_notice_hours) }}"></label>
+<label>Abrir agenda para os próximos (dias)<input type="number" name="booking_window_days" min="1" max="180" required value="{{ old('booking_window_days',$company->booking_window_days) }}"></label></div>
+<p class="muted">Todos os horários representam a hora local da clínica. Alterar o fuso não converte os agendamentos existentes.</p>
+<label>Endereço público<input name="booking_address" maxlength="250" value="{{ old('booking_address',$company->booking_address) }}"></label>
+<label>Apresentação da clínica<textarea name="booking_description" maxlength="1000" rows="3">{{ old('booking_description',$company->booking_description) }}</textarea></label>
+<button class="btn" type="submit">Salvar página da clínica</button></form>@endif</section>
+<section class="card dental-card"><h2>Expediente por dentista</h2>
+@if($professionals->isEmpty())<p>Cadastre um dentista com o perfil Profissional em Equipe para configurar seu expediente.</p>@else
+<form method="get" class="dental-inline"><label>Dentista<select name="professional">@foreach($professionals as $item)<option value="{{ $item->id }}" @selected($professional?->id===$item->id)>{{ $item->name }}{{ $item->active?'':' (inativo)' }}</option>@endforeach</select></label><button class="btn secondary">Selecionar</button></form>
+<form method="post" action="{{ route('availability.services') }}" class="dental-form">@csrf @method('PUT')<input type="hidden" name="professional_id" value="{{ $professional->id }}"><h3>Procedimentos oferecidos</h3><p class="muted">Somente procedimentos habilitados poderão ser reservados com este dentista.</p><div class="procedure-grid">@forelse($services as $item)<label class="procedure-choice"><input type="checkbox" name="services[]" value="{{ $item->id }}" @checked(in_array($item->id,$assigned))><span>{{ $item->name }}<small>{{ $item->duration_minutes }} minutos</small></span></label>@empty<p>Cadastre os procedimentos na área de Serviços.</p>@endforelse</div><button class="btn secondary">Salvar procedimentos</button></form>
+<h3>Períodos de atendimento</h3><p class="muted">Adicione dois períodos para reservar o intervalo de almoço. Remover um período preserva os atendimentos já marcados.</p>
+<div class="period-list">@forelse($periods as $period)<div class="period-row"><span><strong>{{ $weekdays[$period->weekday] }}</strong> {{ $period->start_time }} – {{ $period->end_time }}</span><form method="post" action="{{ route('availability.removePeriod',$period->id) }}">@csrf @method('DELETE')<button class="btn secondary">Remover</button></form></div>@empty<p>Nenhum expediente configurado. Não serão oferecidos horários públicos.</p>@endforelse</div>
+<form method="post" action="{{ route('availability.period') }}" class="dental-inline">@csrf<input type="hidden" name="professional_id" value="{{ $professional->id }}"><label>Dia da semana<select name="weekday">@foreach($weekdays as $key=>$day)<option value="{{ $key }}">{{ $day }}</option>@endforeach</select></label><label>Início<input type="time" name="start_time" required></label><label>Término<input type="time" name="end_time" required></label><button class="btn">Adicionar período</button></form>@endif</section>
+<section class="card dental-card"><h2>Bloqueios e ausências</h2><p class="muted">Bloqueie férias, feriados ou compromissos. Se houver atendimento no intervalo, reagende ou cancele antes.</p>
+<form method="post" action="{{ route('availability.block') }}" class="dental-form">@csrf<div class="dental-grid"><label>Aplicar a<select name="professional_id"><option value="">Toda a clínica</option>@foreach($professionals as $item)<option value="{{ $item->id }}">{{ $item->name }}</option>@endforeach</select></label><label>Motivo interno<input name="reason" maxlength="150" required></label><label>Início<input type="datetime-local" name="starts_at" required></label><label>Término<input type="datetime-local" name="ends_at" required></label></div><button class="btn">Adicionar bloqueio</button></form>
+<div class="period-list">@forelse($blocks as $block)<div class="period-row"><div><strong>{{ $block->professional_id ? ($professionals->firstWhere('id',$block->professional_id)?->name ?? 'Dentista') : 'Toda a clínica' }}</strong><p>{{ \Illuminate\Support\Carbon::parse($block->starts_at)->format('d/m/Y H:i') }} – {{ \Illuminate\Support\Carbon::parse($block->ends_at)->format('d/m/Y H:i') }}</p><small>{{ $block->reason }}</small></div><form method="post" action="{{ route('availability.removeBlock',$block->id) }}">@csrf @method('DELETE')<button class="btn secondary">Remover</button></form></div>@empty<p>Sem bloqueios futuros.</p>@endforelse</div>{{ $blocks->links() }}</section>
+</div>
+@endsection

@@ -1,0 +1,12 @@
+ATUALIZAÇÃO DO EFEITO DE ESCRITA
+
+1. Envie o conteúdo deste ZIP para a raiz de agenda.bacuridigital.com.
+2. Confirme a substituição dos 3 arquivos existentes.
+3. Estrutura esperada:
+   public/landing-page.php
+   public/css/landing-page.css
+   public/js/landing-page.js
+4. Abra https://agenda.bacuridigital.com/landing-page.php
+5. Pressione Ctrl+F5 uma vez.
+
+A versão do CSS/JS foi alterada para v=1.2 para evitar cache antigo do navegador.

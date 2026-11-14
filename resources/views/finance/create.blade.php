@@ -1,0 +1,7 @@
+@extends('layouts.app')
+@section('title','Novo orçamento')
+@section('heading','Novo orçamento')
+@section('content')
+<section class="card finance-card finance-form"><a class="btn secondary" href="{{ route('finance.index') }}">Voltar ao financeiro</a><h2>Valores para apresentar ao paciente</h2><p class="muted">Você também pode receber um orçamento encaminhado pelo dentista, diretamente do plano de tratamento.</p>
+<form method="post" action="{{ route('finance.store') }}" class="finance-stack">@csrf<input type="hidden" name="request_id" value="{{ old('request_id',\Illuminate\Support\Str::uuid()) }}"><label>Paciente<select name="customer_id" required><option value="">Selecione</option>@foreach($customers as $c)<option value="{{ $c->id }}" @selected(old('customer_id')==$c->id)>{{ $c->name }}</option>@endforeach</select></label><label>Descrição comercial<textarea name="description" maxlength="500" rows="3" required placeholder="Ex.: Tratamento odontológico conforme orçamento apresentado">{{ old('description') }}</textarea></label><p class="muted">Visível à equipe administrativa e na impressão. Não inclua diagnósticos ou observações clínicas.</p><div class="finance-grid"><label>Valor bruto (R$)<input name="gross" inputmode="decimal" placeholder="1500,00" value="{{ old('gross') }}" required></label><label>Desconto (R$)<input name="discount" inputmode="decimal" value="{{ old('discount','0,00') }}"></label></div><button class="btn">Criar orçamento</button></form></section>
+@endsection
