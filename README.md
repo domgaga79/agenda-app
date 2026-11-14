@@ -69,9 +69,9 @@ As capturas abaixo mostram as principais telas da agenda. Os exemplos de cliente
       Resumo dos atendimentos do dia.
     </td>
     <td align="center" width="50%">
-      <a href="docs/screenshots/agenda.jpg"><img src="docs/screenshots/agenda.jpg" alt="Agenda diária com atendimento fictício concluído" width="100%"></a><br>
-      <strong>Agenda diária</strong><br>
-      Atendimento demonstrativo concluído às 9h.
+      <a href="docs/screenshots/agenda.jpg"><img src="docs/screenshots/agenda.jpg" alt="Agenda semanal com atendimento demonstrativo concluído" width="100%"></a><br>
+      <strong>Agenda semanal</strong><br>
+      Visão semanal com atendimento demonstrativo concluído às 9h.
     </td>
   </tr>
   <tr>
