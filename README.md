@@ -56,3 +56,34 @@ A senha é solicitada no terminal. Não execute company:create nem key:generate 
 26 testes locais aprovados, com 121 verificações, usando SQLite em memória. Cobrem login, permissões, isolamento de empresas, cadastros, histórico, arquivamento, preços e conflitos de horários. Os testes não usam o banco de produção. A concorrência real do MariaDB e o funcionamento na sua conta Softhost precisam ser conferidos após implantação.
 
 O atualizador também foi executado com sucesso em uma cópia local do ZIP enviado, com banco SQLite: backup de arquivos, manutenção, testes, duas migrações novas e reconstrução dos caches. Esse ensaio não substitui a verificação do banco MariaDB da hospedagem.
+
+## Galeria do sistema
+
+As capturas abaixo mostram as principais telas da agenda. Os exemplos de cliente, serviço e atendimento usam dados fictícios de demonstração.
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <a href="docs/screenshots/dashboard.jpg"><img src="docs/screenshots/dashboard.jpg" alt="Painel da clínica com um atendimento demonstrativo" width="320"></a><br>
+      <strong>Painel</strong><br>
+      Resumo dos atendimentos do dia.
+    </td>
+    <td align="center" width="50%">
+      <a href="docs/screenshots/agenda.jpg"><img src="docs/screenshots/agenda.jpg" alt="Agenda diária com atendimento fictício concluído" width="320"></a><br>
+      <strong>Agenda diária</strong><br>
+      Atendimento demonstrativo concluído às 9h.
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <a href="docs/screenshots/clientes.jpg"><img src="docs/screenshots/clientes.jpg" alt="Lista filtrada para o cliente fictício de demonstração" width="320"></a><br>
+      <strong>Clientes e pacientes</strong><br>
+      Cadastro fictício filtrado para a captura.
+    </td>
+    <td align="center" width="50%">
+      <a href="docs/screenshots/servicos.jpg"><img src="docs/screenshots/servicos.jpg" alt="Lista filtrada para o serviço fictício de demonstração" width="320"></a><br>
+      <strong>Serviços e procedimentos</strong><br>
+      Serviço demonstrativo com duração de 30 minutos.
+    </td>
+  </tr>
+</table>
